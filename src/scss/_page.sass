@@ -1,0 +1,340 @@
+.content
+    width: 100%
+    overflow: hidden
+    .content-wrapper
+        background: $bgHeader
+        width: 100%
+        min-height: 417px
+        position: absolute
+        border-radius: 0 0 25% 25%
+    &__container
+        margin-top: 25px
+    .greeting
+        &__phone
+            display: flex
+            align-items: center
+            justify-content: center
+            .phone-border
+                position: relative
+                z-index: 100
+            .phone-content
+                position: absolute
+                z-index: 10
+        &__social
+            .social-list
+                display: flex
+                flex-direction: column
+                position: absolute
+                right: 0
+                top: 35%
+                gap: 15px
+                margin-right: 27px
+                &__item
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 24px
+                    height: 24px
+                    color: #fff
+                    &::before
+                        transition: all 0.6s ease 0s
+                    &:hover
+                        color: $textDarkness
+        &__btn
+            margin-top: 5px
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            img
+                position: relative
+            .arrow-btn
+                position: absolute
+                background: none
+                color: #fff
+                font-size: 16px
+
+    .how-download
+        &__phone
+            max-width: 343px
+            img
+                object-fit: contain
+                pointer-events: none
+        &__content
+            max-width: 628px
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            .download-title
+                margin-bottom: 25px
+                &__item
+                    font-size: 42px
+                    display: flex
+                    align-items: center
+                    .smile
+                        margin-left: 14px
+                        font-weight: 900
+                        font-size: 30px
+                        line-height: 40px
+                        text-align: center
+            .download-description
+                margin-bottom: 73px
+                &__text
+                    font-size: 18px
+                    color: $colorTxt
+            .download-btn
+                display: flex
+                align-items: center
+                flex-direction: row
+                gap: 23px
+                &__item-google
+                    width: 215px
+                    height: 71px
+                    background-image: url(../img/btn-google-play.png)
+                    background-position: center
+                    background-repeat: no-repeat
+                &__item-app
+                    width: 215px
+                    height: 71px
+                    background-image: url(../img/btn-app-store.png)
+                    background-position: center
+                    background-repeat: no-repeat
+    .content-like-wrapper
+        background: url(../img/bg-2.jpg)
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+
+        position: relative
+    .like-restourant
+        position: relative
+        max-height: 562.65px
+        &__content
+            max-width: 540px
+            .like-title
+                margin-bottom: 20px
+                &__item
+                    display: flex
+                    flex-flow: wrap
+                    color: #fff
+                    .orange
+                        margin-right: 5px
+                    .smile
+                        margin-left: 5px
+                        font-weight: 900
+                        font-size: 30px
+                        line-height: 40px
+                        text-align: center
+
+            .like-description
+                margin-bottom: 20px
+                &__item
+                    color: #fff
+            .like-num
+                display: flex
+                align-items: center
+                gap: 49px
+                color: #fff
+                &__title
+                    h3
+                        font-family: $fontFamilyStandart
+                        font-weight: 600
+                        font-size: 37px
+                        line-height: 43px
+                &__description
+                    p
+                        font-family: $fontFamilyStandart
+                        font-weight: 400
+                        font-size: 18px
+                        line-height: 21px
+        &__image
+            // width: 100%
+            // height: 100%
+            width: 371px
+            position: relative
+            img
+                top: 0px
+                // position: absolute
+                object-fit: contain
+    .platform
+        &__content
+            max-width: 445px
+            .platform-title
+                margin-bottom: 30px
+            .platform-description
+        &__map
+            .map
+                background-image: url(../img/map.png)
+                background-position: center center
+                background-repeat: no-repeat
+                background-size: cover
+                width: 633px
+                height: 271px
+                position: relative
+                img
+                    &:nth-child(1)
+                        position: absolute
+                        left: 10%
+                        top: 30%
+                    &:nth-child(2)
+                        position: absolute
+                        left: 25%
+                        top: 50%
+                    &:nth-child(3)
+                        position: absolute
+                        top: 55%
+                        left: 45%
+                        right: 45%
+                    &:nth-child(4)
+                        position: absolute
+                        right: 15%
+                        top: 30%
+    .content-delivery-wrapper
+        background: url(../img/bg-3.jpg)
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+    .delivery
+        &__image
+        &__content
+            max-width: 523px
+            .delivery-title
+                margin-bottom: 30px
+                &__item
+                    color: #fff
+            .delivery-description
+                &__item
+                    color: #fff
+    .faq
+        &__content
+            max-width: 539px
+            .faq-title
+                margin-bottom: 20px
+            .faq-btn
+                // overflow: hidden
+                .faq-accardeon
+                    box-sizing: border-box
+                    background: transparent
+                    padding: 5px 5px 5px 10px
+                    position: relative
+                    overflow: hidden
+                    font-family: $fontFamilyStandart
+                    min-width: 539px
+                    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1)
+                    border-radius: 5px
+                    &:not(:last-child)
+                        margin-bottom: 10px
+                    &__title
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 170%
+                        color: $colorToggle
+                        margin: 0 35px 0 0
+                    &__text
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 175%
+                        color: $colorToggle
+                        display: none
+                        margin-top: 30px
+                    &__toggle
+                        background: none
+                        background-color: transparent
+                        color: inherit
+                        cursor: pointer
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        font-size: 16px
+                        padding-top: 3px
+                        position: absolute
+                        top: 5px
+                        right: 10px
+                        height: 24px
+                        width: 24px
+                        transition: all 0.4s ease 0s
+                        .icon
+                            &::before
+                                color: rgba(247, 98, 15, 1)
+                                font-size: 10px
+                .active> .faq-accardeon__toggle
+                    transform: rotate(180deg)
+                .active
+
+                .active>.faq-accardeon__text
+                    display: block
+                    background: #ffff
+        &__image
+            position: relative
+            img
+                object-fit: contain
+                object-position: center
+    .content-reviews-wrapper
+        background: url(../img/bg-4.jpg)
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+    .reviews
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 65px
+        &__content
+            max-width: 445px
+            .reviews-title
+                margin-bottom: 20px
+                &__item
+                    color: #fff
+            .reviews-description
+                margin-bottom: 20px
+                &__item
+                    color: #fff
+            .reviews-btn
+                margin-bottom: 20px
+            .reviews-description-italic
+                margin-bottom: 10px
+                &__item
+                    color: #fff
+            .reviews-ps
+                text-align: end
+                &__item
+                    color: #fff
+        &__image
+// Reuse
+
+.orange
+    font-family: $fontFamilyTitle
+    color: $colorFontTitle1
+.black
+    font-family: $fontFamilyTitle
+    color: $colorFontTitle2
+.smile
+    font-family: $fontEmoji
+.title
+    font-family: $fontFamilyTitle
+    font-weight: 700
+    font-size: 32px
+    line-height: 120%
+    letter-spacing: -0.03em
+    text-transform: uppercase
+    text-align: start
+    gap: 10px
+.description
+    font-family: $fontFamilyStandart
+    font-weight: 400
+    font-size: 14px
+    line-height: 150%
+    color: $colorTxt
+.italic
+    font-family: $fontCardItalic
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    font-style: italic
+.flex-row
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center

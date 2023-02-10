@@ -1,0 +1,131 @@
+.header
+    font-family: $fontFamilyStandart
+    font-style: normal
+    width: 100%
+    background: $bgHeader
+    &__container
+        padding: 15px 0px
+        margin: 0 auto
+
+.menu
+    &__body
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        flex: 1 1 auto
+        @media (max-width: $md2)
+            display: flex
+            flex-direction: column
+            height: auto
+            justify-content: center
+
+        @media (max-width: $md1)
+            justify-content: space-between
+
+    &__btn
+        min-width: 377px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__icon
+        svg
+            width: 42px
+
+    &__list
+        min-width: 340px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .menu-link
+            display: flex
+            align-items: center
+            justify-content: center
+            font-weight: 700
+            font-size: 16px
+            line-height: 170%
+            color: #FFFFFF
+            transition: all 0.7s ease 0s
+            &:hover
+                color: $textDarkness
+                text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7)
+            span
+                &::before
+                    padding-right: 5px
+.logo
+    width: 42px
+    height: 42px
+    object-fit: contain
+    pointer-events: none
+    object-position: center center
+.btn
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    padding: 8px 25px
+    gap: 10px
+    color: #ffffff
+    background: #FFFFFF
+    border-radius: 100px
+    transition: all 0.7s ease 0s
+    color: $colorFontTitle1
+    &:hover
+        background: rgba(255, 255, 255, 0.8)
+        color: rgba(49, 49, 49, 1)
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    span
+        font-weight: 700
+        font-size: 18px
+        line-height: 170%
+
+.svg-meeting-room-dims
+    width: 24px
+    height: 24px
+.svg-group-add-dims
+    width: 24px
+    height: 24px
+// burger menu
+// .icon-menu {
+//     display: none;
+//     @media (max-width: $md3+px) {
+//         display: block;
+//         position: relative;
+//         top: 18px;
+//         right: 10px;
+//         width: 30px;
+//         height: 18px;
+//         cursor: pointer;
+//         z-index: 5;
+//         span {
+//             transition: all 0.3s ease 0s;
+//             top: calc(50% - 1px);
+//             left: 8px;
+//             position: absolute;
+//             width: 100%;
+//             height: 2px;
+//             background-color: #000;
+//             &:first-child {
+//                 top: 0px;
+//             }
+//             &:last-child {
+//                 top: auto;
+//                 bottom: 0px;
+//             }
+//         }
+//         &._active {
+//             span {
+//                 transform: scale(0);
+//                 &:first-child {
+//                     transform: rotate(-45deg);
+//                     top: calc(50% - 1px);
+//                 }
+//                 &:last-child {
+//                     transform: rotate(45deg);
+//                     bottom: calc(50% - 1px);
+//                 }
+//             }
+//         }
+//     }
+// }

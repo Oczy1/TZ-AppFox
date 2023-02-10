@@ -1,0 +1,40 @@
+.footer
+    font-family: $fontFamilyStandart
+    font-style: normal
+    width: 100%
+    background: $bgHeader
+    padding: 10px 0px
+    &__body
+        display: flex
+        align-items: center
+        flex-direction: row
+        justify-content: space-between
+        .footer-logo
+            img
+                pointer-events: none
+                object-fit: contain 
+        .footer-row
+            display: flex
+            align-items: center
+            gap: 98px
+        .footer-contacts
+            min-width: 337px
+            max-width: 337px
+            &__list
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: space-between
+                width: 100%
+                .list-item
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 170%
+                    color: #FFFFFF
+                    transition: all 0.7s ease 0s
+                    &:hover
+                        color: $textDarkness
+                        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7)
+                span
+                    margin-right: 5px
+        .footer-btn
